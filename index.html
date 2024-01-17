@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduzione a Typescript">
+    <title>Typescript - Intro</title>
+</head>
+
+<body>
+    <main>
+        <h1> TYPESCRIPT: </h1>
+        <h2>Cosa è?</h2>
+        <p>E' un linguaggio di programmazione che estende la sintassi di JavaScript, il che fa si che qualsiasi
+            programma
+            scritto in JavaScript funzioni anche su Typescript.</p>
+
+        <h2>Quali problemi risolve? </h2>
+        <p>Grazie alla sua sintassi TypeScript permette di scrivere un codice più pulito e ottimizzato con best
+            practises
+            applicate al JavaScript compilato in
+            automatico ed aiuta l'editor di codice a segnalare in modo molto più efficace eventuali bug e prevenendo
+            riassegnazioni di variabili con regole più ferree</p>
+
+        <h2>Quali sono le differenze con JavaScript?</h2>
+        <p>La principale differenza con JS è che si possono specificare i Data Types, in modo da avere sotto controllo
+            il
+            proprio codice impostando delle regole
+            ben precise che bloccano la tipizzazione dinamica che invece ha JS</p>
+
+        <h2>Dove viene utilizzato e come?</h2>
+        <p>Il suo utilizzo è principalmente per progetti più complicati, ma dato che non è supportato dai browser o
+            dalle
+            versioni di Node più stabili ha bisogno di
+            essere compilato in JavaScript tramite un compilatore.</p>
+
+        <h2>Cosa è e come si usa il compilatore di TypeScript?</h2>
+        <p>Il compilatore TS converte il codice del file .ts in un normale file .js, in modo che possa essere
+            interpretato
+            da browser e Node.
+            Per utilizzarlo basta scrivere nel terminale di comando del proprio editor: tsc (nomeDelFile.ts)
+            Specificando oltre che al percorso del file "-w" (watch) è possibile far si che il compilatore aggiorni in
+            automatico ad ogni salvataggio del file anche
+            quello compilato in JS.
+
+            Le variabili e le costanti vanno dichiarate e inizializzate, per esempio..
+
+            Dichiarazione: <code>let name: string </code>;
+            Inizializzazione: <code>Name = 'John'</code>;
+
+            oppure insieme:
+            let name: string = 'John'</p>
+
+        <h2>Type Inference</h2>
+        <p>Il compilatore TypeScript può dedurre il data type di variabili, funzioni, dati, strutture in base alle
+            espressioni utilizzate per inizializzarlo e,
+            una volta definito, impedisce di riassegnarlo ad un altro tipo di dato.
+            ES.
+            <code>const name = ‘Giovanni’;
+            name = 40 ; // L'editor segnala l'errore</code></p>
+
+        <h2>Tipo 'any'</h2>
+
+        <p>Con la dichiarazione del tipo "any" è possibile riassegnare data types diversi come faremmo su Javascript
+            eludendo le limitazioni che darebbe la normale
+            dichiarazione, ad esempio, specificando che una variabile è di tipo any, è possibile inizializzarla come
+            valore
+            booleano e riassegnarla successivamente
+            ad una stringa</p>
+
+        <h2>Tipo union</h2>
+
+        <p>Il tipo union non è altro che una dichiarazione di due o più diversi tipi di data, che però rendono possibile
+            assegnarle solo a quegli specifici data types
+            utilizzando l'operatore | (oppure) di JavaScript
+            ES.
+            <code>let variabile: string | number // questa variabile potrà essere solo una stringa oppure un numero </code>  </p>
+
+        <h2>Tipo Tuple</h2>
+
+        <p>Con il tuple possiamo dichiarare un array assegnando specifici data types a specifici slot dell'array stesso,
+            rendendo ad esempio l'indice 1 obbligatoriamente
+            come valore di tipo boolean
+            ES.
+            <code>let arrTup: [string, boolean, number] // indice 0 = stringa indice 1 = booleano indice 2 = numero</code></p>
+
+        <h2>Interfaces</h2>
+
+        <p>Un’interfaccia è un costrutto TypeScript in grado di specificare nel dettaglio la struttura di un oggetto:
+            quante e quali proprietà/metodi debba avere,
+            il tipo di ognuno di esse e anche se una parte di esse non debbano essere esplicitamente presenti
+            (quindi quali tra essi sono opzionali, specificate con il simbolo ?).
+
+            ES.
+            <code>
+            interface IBook {
+            title: string
+            author: string
+            year: number
+            numberOfPages?: number }</code></p>
+
+
+        <h2>Types</h2>
+
+        <p>Con la keyword type possiamo definire dei data types personalizzati ed utilizzarli unendo quelli primitivi
+            ES.
+            <code>type StringOrBoolean = string | boolean
+        StringOrNumber è un tipo custom creato dall’UNIONE di string e number
+        let data: StringOrNumber = ‘Initial value’
+        data = 100</code>
+        </p>
+
+
+        <h2>Generics</h2>
+        <p>I generics permettono di definire funzioni, classi o interfacce che sono in grado di lavorare con diversi
+            tipi
+            di dati.
+            Possiamo inquadrarli come degli “argomenti di tipo”, type arguments.
+            ES.
+            <code>
+
+        </code>
+        </p>
+
+
+
+
+    </main>
+
+</body>
+
+</html>
