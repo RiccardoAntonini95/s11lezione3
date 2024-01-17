@@ -44,20 +44,20 @@
             automatico ad ogni salvataggio del file anche
             quello compilato in JS.
 
-            Le variabili e le costanti vanno dichiarate e inizializzate, per esempio..
+            Le variabili e le costanti vanno dichiarate e inizializzate, per esempio.. <br>
 
-            Dichiarazione: <code>let name: string </code>;
-            Inizializzazione: <code>Name = 'John'</code>;
+            Dichiarazione: <code>let name: string </code>; <br>
+            Inizializzazione: <code>Name = 'John'</code>; <br>
 
-            oppure insieme:
+            oppure insieme: <br>
             <code>let name: string = 'John'</code></p>
 
         <h2>Type Inference</h2>
         <p>Il compilatore <b>TypeScript</b> può dedurre il data type di variabili, funzioni, dati, strutture in base alle
             espressioni utilizzate per inizializzarlo e,
             una volta definito, impedisce di riassegnarlo ad un altro tipo di dato.
-            ES.
-            <code>const name = 'Giovanni';
+            ES. <br>
+            <code>const name = 'Giovanni'; <br>
             name = 40 ; // L'editor segnala l'errore</code></p>
 
         <h2>Tipo 'any'</h2>
@@ -74,7 +74,7 @@
         <p>Il tipo union non è altro che una dichiarazione di due o più diversi tipi di data, che però rendono possibile
             assegnarle solo a quegli specifici data types
             utilizzando l'operatore | (oppure) di JavaScript
-            ES.
+            ES. <br>
             <code>let variabile: string | number // questa variabile potrà essere solo una stringa oppure un numero </code>  </p>
 
         <h2>Tipo Tuple</h2>
@@ -82,8 +82,8 @@
         <p>Con il tuple possiamo dichiarare un array assegnando specifici data types a specifici slot dell'array stesso,
             rendendo ad esempio l'indice 1 obbligatoriamente
             come valore di tipo boolean
-            ES.
-            <code>let arrTup: [string, boolean, number] // indice 0 = stringa indice 1 = booleano indice 2 = numero</code></p>
+            ES. <br>
+            <code>let arrTup: [string, boolean, number] <br> // indice 0 = stringa indice 1 = booleano indice 2 = numero</code></p>
 
         <h2>Interfaces</h2>
 
@@ -93,11 +93,11 @@
             (quindi quali tra essi sono opzionali, specificate con il simbolo ?).
 
             ES.
-            <code>
-            interface IBook {
-            title: string
-            author: string
-            year: number
+            <code> <br>
+            interface IBook { <br>
+            title: string <br>
+            author: string <br>
+            year: number <br>
             numberOfPages?: number }</code></p>
 
 
@@ -105,7 +105,7 @@
 
         <p>Con la keyword type possiamo definire dei data types personalizzati ed utilizzarli unendo quelli primitivi
             ES.
-            <code>type StringOrBoolean = string | boolean
+            <code><br>type StringOrBoolean = string | boolean<br>
         let data: StringOrNumber = 'Initial value'
         data = 100</code>
         </p>
@@ -117,10 +117,6 @@
             di dati.
             Possiamo inquadrarli come degli “argomenti di tipo”, type arguments.
         </p>
-
-
-
-
     </main>
 
 </body>
